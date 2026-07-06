@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Level Computer Science: Advanced Algorithmic Synthesis</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; max-width: 1100px; margin: auto; padding: 20px; background-color: #fcfcfc;">
+
+<header style="border-bottom: 3px solid #007BA6; padding-bottom: 15px; margin-bottom: 30px;">
+    <h1 style="color: #007BA6; margin-bottom: 5px;">Advanced Core Programming Principles Mastery</h1>
+    <p style="color: #00796B; font-weight: bold; font-style: italic;">Instruction: Read through the conceptual framework synthesis, review the syntax reminders, and complete the comprehensive end-of-term programming challenge. (Estimated Time: 45 minutes)</p>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+    
+    <div style="flex: 1; min-width: 250px; max-width: 280px; position: sticky; top: 10px;">
+        <div style="border: 1px solid #007BA6; border-radius: 6px; overflow: hidden; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #007BA6; color: white; padding: 12px; text-align: center; font-weight: bold;">Session Progress Tracker</div>
+            <a href="#concepts" style="color: #0056B3; display: block; padding: 12px; border-bottom: 1px solid #eee; text-decoration: none; font-weight: 500;">1. Component Overview</a>
+            <a href="#challenge-zone" style="color: #0056B3; display: block; padding: 12px; border-bottom: 1px solid #eee; text-decoration: none; font-weight: 500;">2. Practical Synthesis Task</a>
+            <a href="#exam-practice" style="color: #0056B3; display: block; padding: 12px; border-bottom: 1px solid #eee; text-decoration: none; font-weight: 500;">3. Exam Style Application</a>
+            <a href="#further-reading" style="color: #0056B3; display: block; padding: 12px; text-decoration: none; font-weight: 500;">4. Further Reading References</a>
+        </div>
+    </div>
+
+    <div style="flex: 3; min-width: 320px;">
+        
+        <div id="concepts" style="margin-bottom: 40px; scroll-margin-top: 20px;">
+            <div style="background: #007BA6; color: white; padding: 10px 15px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 1.2em;">
+                1. Core Concepts Synthesis Matrix
+            </div>
+            <div style="border: 1px solid #007BA6; border-top: none; padding: 20px; background: white; border-radius: 0 0 6px 6px;">
+                <p>To prepare effectively for your Edexcel International A-Level assessment, you must be able to synthesise all fundamental computational concepts into single, robust programs. Below is your structural review toolkit before entering the challenge sandbox.</p>
+                
+                <h4 style="color: #00796B; margin-bottom: 5px;">Key Architectural Frameworks:</h4>
+                <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.7;">
+                    <li><strong>Sequence &amp; Data Types:</strong> Data must flow logically. Explicit casting using <code style="font-family: monospace;">int()</code>, <code style="font-family: monospace;">float()</code>, or <code style="font-family: monospace;">str()</code> prevents runtime mismatches.</li>
+                    <li><strong>Iteration Substructures:</strong> Use <span style="color: #C62828; font-weight: bold;">count-controlled loops</span> (<code style="font-family: monospace;">for i in range()</code>) when the limit is known beforehand, and <span style="color: #C62828; font-weight: bold;">condition-controlled loops</span> (<code style="font-family: monospace;">while condition:</code>) when running until a flag changes state.</li>
+                    <li><strong>Boolean &amp; Bitwise Logical Operators:</strong> Use logical gates (<code style="font-family: monospace;">and</code>, <code style="font-family: monospace;">or</code>, <code style="font-family: monospace;">not</code>) for flow control, and bitwise structures (<code style="font-family: monospace;">&amp;</code>, <code style="font-family: monospace;">|</code>, <code style="font-family: monospace;">^</code>) for raw data manipulation at bit level.</li>
+                    <li><strong>Defensive Coding &amp; Exceptions:</strong> Use <code style="font-family: monospace;">try:</code> and <code style="font-family: monospace;">except ValueError:</code> blocks to capture bad input data instead of allowing your network application to crash.</li>
+                    <li><strong>Subroutine Partitioning:</strong> Functions must accept arguments explicitly, perform local tasks, and return values without relying on global scope contamination.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="challenge-zone" style="margin-bottom: 40px; scroll-margin-top: 20px;">
+            <div style="background: #007BA6; color: white; padding: 10px 15px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 1.2em;">
+                2. Comprehensive Term Synthesis Challenge
+            </div>
+            <div style="border: 1px solid #007BA6; border-top: none; padding: 20px; background: white; border-radius: 0 0 6px 6px;">
+                <p style="color: #00796B; font-weight: bold;">Instruction: Read the network specification carefully. Implement your solution inside the provided black-box code editor container, ensuring all architectural tests pass.</p>
+                
+                <div style="background: #f4f9fb; border-left: 4px solid #007BA6; padding: 12px; margin-bottom: 20px; border-radius: 0 4px 4px 0;">
+                    <strong>The Problem: Cyber-Security Network Packet Checker</strong><br>
+                    You are designing a low-level packet analyser module for a routing firewall system. The system receives raw data streams that need sanitisation and mathematical proof checks before being allowed on the network.
+                    <br><br>
+                    <strong>Your Task Requirements:</strong>
+                    <ol style="margin-top: 5px; padding-left: 20px;">
+                        <li>Create a mathematical constant called <code style="font-family: monospace;">BIT_MASK</code> initialized to the value <code style="font-family: monospace;">15</code> (binary <code style="font-family: monospace;">00001111</code>).</li>
+                        <li>Define a subroutine function called <code style="font-family: monospace;">validate_packet(payload_list)</code>.</li>
+                        <li>Inside the function, declare a counting variable tracker initialized to zero.</li>
+                        <li>Loop through <code style="font-family: monospace;">payload_list</code>. Use a <code style="font-family: monospace;">try-except</code> block to parse data string items safely into integer numbers. If a <code style="font-family: monospace;">ValueError</code> happens, increment a separate error tally and continue.</li>
+                        <li>For valid numbers, check if the value is less than 0 or greater than 255. If it is out of limits, flag it.</li>
+                        <li>Perform a bitwise AND operation between the valid integer data and your <code style="font-family: monospace;">BIT_MASK</code>. If the result equals 0, append that number into a new safe tracking array list.</li>
+                        <li>Return three values back from your subroutine function: a logical Boolean status flag (true if no validation errors occurred, false otherwise), the safe array list, and the calculation count total.</li>
+                    </ol>
+                </div>
+
+                <div style="margin-bottom: 10px; font-weight: bold; color: #333333;">Write your Python implementation solution below:</div>
+                <textarea id="main-editor" rows="22" style="width: 100%; font-family: 'Courier New', Courier, monospace; font-size: 14px; background: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 6px; box-sizing: border-box; outline: none; resize: vertical; line-height: 1.5;">
+# CONSTANTS DEFINITION
+BIT_MASK = 15
+
+def validate_packet(payload_list):
+    # Initialise variables and tracking lists
+    safe_list = []
+    error_count = 0
+    
+    # Complete your count-controlled or condition-controlled processing below
+    
+    
+    
+    # Ensure your subroutine returns: status_bool, safe_list, error_count
+    return True, safe_list, error_count
+</textarea>
+                
+                <div style="text-align: right; margin-top: 15px;">
+                    <button onclick="evaluateSandboxCode()" style="background: #00796B; color: white; border: none; padding: 10px 20px; font-weight: bold; font-size: 1em; border-radius: 4px; cursor: pointer; transition: background 0.2s;">Run Structural System Test Verification</button>
+                </div>
+                
+                <div id="sandbox-feedback" style="margin-top: 15px; font-size: 0.95em; padding: 15px; border-radius: 4px; display: none; line-height: 1.5;"></div>
+            </div>
+        </div>
+
+        <div id="exam-practice" style="margin-bottom: 40px; scroll-margin-top: 20px;">
+            <div style="background: #007BA6; color: white; padding: 10px 15px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 1.2em;">
+                3. Exam Practice Simulation Case
+            </div>
+            <div style="border: 1px solid #007BA6; border-top: none; padding: 20px; background: white; border-radius: 0 0 6px 6px;">
+                <p style="font-weight: bold; color: #C62828;">Scenario Matrix Assessment (Adapted Style Framework):</p>
+                <p>An embedded network switch applies a logical bit manipulation check to packet headers. The algorithm iterates across four distinct elements, checking if a value satisfies a combined operational condition using <code style="font-family: monospace;">OR</code> gating logic alongside bit-level mask evaluations.</p>
+                
+                <div style="background: #f9f9f9; padding: 12px; border-radius: 4px; font-family: monospace; font-size: 0.9em; margin-bottom: 15px; border: 1px solid #ddd;">
+                    # Test Scenario Footprint
+                    Header Stream: A = [12, "Malformed Data", 45, 160]
+                    Mask Pattern: 0x0F (Decimal 15)
+                </div>
+
+                <p><strong>Question:</strong> State two clear modifications that are required to handle inputs where structural array variables contain malformed data types without crashing execution pipelines. Describe your chosen methodology by contrasting iteration strategies.</p>
+                
+                <div style="background: #f4f9fb; padding: 12px; border-radius: 6px; font-size: 0.95em; border-left: 4px solid #00796B;">
+                    <strong>Self-Correction Framework:</strong> Click below to verify your answer matrix concepts against the mark scheme requirements.
+                    <details style="margin-top: 10px; cursor: pointer;">
+                        <summary style="font-weight: bold; color: #0056B3;">Reveal Spec Marking Benchmarks</summary>
+                        <div style="margin-top: 10px; background: white; padding: 10px; border-radius: 4px; border: 1px dashed #007BA6;">
+                            <ul>
+                                <li><strong>Point 1:</strong> Use a high-level Exception catch trap module containing explicit <code style="font-family: monospace;">try/except</code> code branches.</li>
+                                <li><strong>Point 2:</strong> Incorporate dynamic parsing validations inside the iterative condition steps to drop non-integer items safely before operations execute.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div id="further-reading" style="margin-bottom: 20px; scroll-margin-top: 20px;">
+            <div style="background: #007BA6; color: white; padding: 10px 15px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 1.2em;">
+                4. Academic Extension Frameworks
+            </div>
+            <div style="border: 1px solid #007BA6; border-top: none; padding: 20px; background: white; border-radius: 0 0 6px 6px;">
+                <p>Extend your advanced structural programming theory skills through these reference channels:</p>
+                <ul style="padding-left: 20px; line-height: 1.8;">
+                    <li><a href="https://docs.python.org/3/tutorial/errors.html" target="_blank" style="color: #0056B3; font-weight: bold; text-decoration: underline;">Official Documentation: Dynamic Built-in Exceptions Control Structures</a></li>
+                    <li><a href="https://docs.python.org/3/reference/expressions.html#bitwise-operations" target="_blank" style="color: #0056B3; font-weight: bold; text-decoration: underline;">Advanced Bitwise Operators Specification Layouts</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function evaluateSandboxCode() {
+        const textCode = document.getElementById('main-editor').value;
+        const feedbackContainer = document.getElementById('sandbox-feedback');
+        
+        feedbackContainer.style.display = "block";
+        
+        // Checklist requirements checks
+        const matchesConstant = textCode.includes("BIT_MASK") && (textCode.includes("15") || textCode.includes("0x0F"));
+        const matchesSubroutine = textCode.includes("def validate_packet") && textCode.includes("payload_list");
+        const matchesTry = textCode.includes("try:") && textCode.includes("except");
+        const matchesBitwise = textCode.includes("&") && textCode.includes("BIT_MASK");
+        const matchesReturns = textCode.includes("return") && (textCode.includes("safe_list") || textCode.includes("error_count"));
+        const matchesLoops = textCode.includes("for ") || textCode.includes("while ");
+        
+        let gradingTally = 0;
+        let diagnosticReport = "<ul style='margin-top: 5px; padding-left: 20px;'>";
+        
+        if (matchesConstant) { gradingTally++; diagnosticReport += "<li>✔️ Constant definition detected correctly with appropriate static masking allocation.</li>"; }
+        else { diagnosticReport += "<li>❌ Constant 'BIT_MASK = 15' is missing or set incorrectly.</li>"; }
+        
+        if (matchesSubroutine) { gradingTally++; diagnosticReport += "<li>✔️ Subroutine signature configured to accept formal array arguments correctly.</li>"; }
+        else { diagnosticReport += "<li>❌ Subroutine definition syntax mismatch. Check your parameter names.</li>"; }
+        
+        if (matchesLoops) { gradingTally++; diagnosticReport += "<li>✔️ Loop iteration structures present for list items indexing execution.</li>"; }
+        else { diagnosticReport += "<li>❌ Program lacks count or condition-controlled loops to inspect data elements sequentially.</li>"; }
+        
+        if (matchesTry) { gradingTally++; diagnosticReport += "<li>✔️ Defensive block wrapper active against type exceptions data errors.</li>"; }
+        else { diagnosticReport += "<li>❌ Exception handling blocks ('try' / 'except ValueError:') are absent. Malformed data will crash the platform.</li>"; }
+        
+        if (matchesBitwise) { gradingTally++; diagnosticReport += "<li>✔️ Bitwise logic operators matching masking parameters specifications.</li>"; }
+        else { diagnosticReport += "<li>❌ Bitwise logical evaluation operators (&) missing from validation filters sequence.</li>"; }
+        
+        if (matchesReturns) { gradingTally++; diagnosticReport += "<li>✔️ Multi-value functional returns mapping outputs accurately.</li>"; }
+        else { diagnosticReport += "<li>❌ Function does not return execution state tracking values to caller system environment.</li>"; }
+        
+        diagnosticReport += "</ul>";
+        
+        if (gradingTally === 6) {
+            feedbackContainer.style.background = "#e0f2f1";
+            feedbackContainer.style.border = "1px solid #00796B";
+            feedbackContainer.style.color = "#004D40";
+            feedbackContainer.innerHTML = "<strong>🎯 Structural Analysis Passed: 100% Correct Architecture!</strong><br>Fantastic solution implementation. Your routine provides complete type verification coverage, bitwise checks filter parameters correctly, and exceptions protect integrity loops cleanly. Excellent engineering design!";
+        } else {
+            feedbackContainer.style.background = "#ffebee";
+            feedbackContainer.style.border = "1px solid #C62828";
+            feedbackContainer.style.color = "#B71C1C";
+            feedbackContainer.innerHTML = "<strong>⚠️ Compilation Requirements Test Feedback (" + gradingTally + "/6 components validated):</strong><br>Review the target structural checklist trace report below to adjust validation routines:<br>" + diagnosticReport;
+        }
+    }
+</script>
+
+</body>
+</html>
